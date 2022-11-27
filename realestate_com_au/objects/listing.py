@@ -18,6 +18,7 @@ class Listing:
     price_text: str                                         #Captures the original text, such as a price range or comment. This is lost when converting to Integer
     bedrooms: int
     bathrooms: int
+    features: list
     parking_spaces: int
     building_size: int
     building_size_unit: str
@@ -167,6 +168,7 @@ def get_listing(listing):
         listing_company_phone=listing_company_phone,
         bedrooms=bedrooms,
         bathrooms=bathrooms,
+        features=features,
         parking_spaces=parking_spaces,
         building_size=building_size,
         building_size_unit=building_size_unit,
